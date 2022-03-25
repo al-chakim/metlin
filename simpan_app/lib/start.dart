@@ -30,9 +30,28 @@ class _StartedState extends State<Started> {
                     fontSize: 24,
                     fontWeight: FontWeight.w800
                   ),
+                ),
+                SizedBox(height: 34,),
+                Image.asset(
+                  'assets/images/loker.png',
+                  height: 270,
+                  width: 300,
+                ),
+                SizedBox(height: 50),
+                Text(
+                  'keep your data safe and',
+                  style: TextStyle(
+                    fontSize: 16
+                  ),
+                ),
+                Text(
+                  'neat so it`s easy to manage',
+                  style: TextStyle(
+                    fontSize: 16
+                  ),
                 )
               ],
-            )
+            ),
           ],
         ),
       ),
