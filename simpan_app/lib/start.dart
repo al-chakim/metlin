@@ -49,7 +49,27 @@ class _StartedState extends State<Started> {
                   style: TextStyle(
                     fontSize: 16
                   ),
-                )
+                ),
+                SizedBox(height: 100),
+                FloatingActionButton.extended(
+                  backgroundColor: const Color(0xff4B0082),
+                  foregroundColor: Colors.white,
+                  onPressed: () {
+                    // Navigator.push(
+                    //   context, MaterialPageRoute(
+                    //     builder: (context){
+                    //       return ////;
+                    //     }
+                    //   )
+                    // );
+                  },
+                  label: Text(
+                    '                  Get Started                  ',
+                    style: TextStyle(
+                      fontSize: 16
+                    ),
+                  ),
+                ),
               ],
             ),
           ],
