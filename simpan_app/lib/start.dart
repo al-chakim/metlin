@@ -64,7 +64,7 @@ class _StartedState extends State<Started> {
                     // );
                   },
                   label: Text(
-                    '                  Get Started                  ',
+                    '                 Get Started                 ',
                     style: TextStyle(
                       fontSize: 16
                     ),
