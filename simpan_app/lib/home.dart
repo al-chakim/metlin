@@ -19,10 +19,10 @@ class _HomePageState extends State<HomePage> {
               SizedBox(width: 10,),
               Image.asset(
                 'assets/images/scan.png',
-                height: 200,
-                width: 200,
+                height: 215,
+                width: 215,
               ),
-              SizedBox(width: 15,),
+              SizedBox(width: 7,),
               Text(
                 'Save Your Data \nHere!',
                 textAlign: TextAlign.center,
@@ -42,7 +42,7 @@ class _HomePageState extends State<HomePage> {
                   'Data Category',
                   style: TextStyle(
                     fontSize: 16,
-                    fontWeight: FontWeight.w500
+                    fontWeight: FontWeight.w700
                   ),
                 ),
               ],
