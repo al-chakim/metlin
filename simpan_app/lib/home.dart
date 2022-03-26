@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:simpan_app/add.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({ Key? key }) : super(key: key);
@@ -56,53 +57,14 @@ class _HomePageState extends State<HomePage> {
     }
 
     return Scaffold(
-      body: Column(
-        children: [
-          SizedBox(height: 75,),
-          Row(
-            children: [
-              //SizedBox(width: 3,),
-              Image.asset(
-                'assets/images/scan.png',
-                height: 215,
-                width: 215,
-              ),
-              SizedBox(width: 10,),
-              Text(
-                'Save Your Data \nHere!',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontWeight: FontWeight.w600,
-                  fontSize: 18
-                ),
-              )
-            ],
-          ),
-          //SizedBox(height: 5,),
-          Padding(
-            padding: const EdgeInsets.only(left: 28),
-            child: Row(
-              children: [
-                Text(
-                  'Data Category',
-                  style: TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.w700
-                  ),
-                ),
-              ],
-            ),
-          ),
-          SizedBox(height: 10,),
-          //panggil class di sini
-          option('Food'),
-          option('Drink'),
-          option('Soap'),
-          option('Groceries'),
-        ],
-      ),
       floatingActionButton: FloatingActionButton(
-        onPressed: (){},
+        onPressed: (){
+          Navigator.push(
+            context, MaterialPageRoute(
+              builder: (context) => AddCategory()
+            )
+          );
+        },
         backgroundColor: Color(0xff4B0082),
         child: Icon(
           Icons.add,
@@ -110,6 +72,58 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+
+      body: SafeArea(
+        child: ListView(
+          children: [
+            Column(
+              children: [
+                SizedBox(height: 25,),
+                Row(
+                  children: [
+                    //SizedBox(width: 3,),
+                    Image.asset(
+                      'assets/images/scan.png',
+                      height: 215,
+                      width: 215,
+                    ),
+                    SizedBox(width: 10,),
+                    Text(
+                      'Save Your Data \nHere!',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontWeight: FontWeight.w600,
+                        fontSize: 18
+                      ),
+                    )
+                  ],
+                ),
+                //SizedBox(height: 5,),
+                Padding(
+                  padding: const EdgeInsets.only(left: 28),
+                  child: Row(
+                    children: [
+                      Text(
+                        'Data Category',
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w700
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                SizedBox(height: 10,),
+                //panggil class di sini
+                option('Food'),
+                option('Drink'),
+                option('Soap'),
+                option('Groceries'),
+              ],
+            ),
+          ],
+        ),
+      )
     );
   }
 }
