@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:simpan_app/home.dart';
 
 class Started extends StatefulWidget {
   const Started({ Key? key }) : super(key: key);
@@ -55,13 +56,13 @@ class _StartedState extends State<Started> {
                   backgroundColor: const Color(0xff4B0082),
                   foregroundColor: Colors.white,
                   onPressed: () {
-                    // Navigator.push(
-                    //   context, MaterialPageRoute(
-                    //     builder: (context){
-                    //       return ////;
-                    //     }
-                    //   )
-                    // );
+                    Navigator.push(
+                      context, MaterialPageRoute(
+                        builder: (context){
+                          return HomePage();
+                        }
+                      )
+                    );
                   },
                   label: Text(
                     '                 Get Started                 ',
