@@ -36,11 +36,12 @@ class _AddCategoryState extends State<AddCategory> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 70, top: 25),
+                padding: const EdgeInsets.only(left: 67, top: 28),
                 child: Text(
                   'Save',
                   style: TextStyle(
-                    fontWeight: FontWeight.w500
+                    fontWeight: FontWeight.w500,
+                    fontSize: 16
                   ),
                 ),
               )
