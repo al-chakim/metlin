@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:simpan_app/home.dart';
+import 'package:simpan_app/theme.dart';
 
 class Started extends StatefulWidget {
   const Started({ Key? key }) : super(key: key);
@@ -41,15 +42,11 @@ class _StartedState extends State<Started> {
                 SizedBox(height: 50),
                 Text(
                   'keep your data safe and',
-                  style: TextStyle(
-                    fontSize: 16
-                  ),
+                  style: huruf1
                 ),
                 Text(
                   'neat so it`s easy to manage',
-                  style: TextStyle(
-                    fontSize: 16
-                  ),
+                  style: huruf1
                 ),
                 SizedBox(height: 100),
                 FloatingActionButton.extended(

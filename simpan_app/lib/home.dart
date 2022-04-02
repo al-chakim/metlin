@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:simpan_app/add.dart';
+import 'package:simpan_app/theme.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({ Key? key }) : super(key: key);
@@ -39,17 +40,21 @@ class _HomePageState extends State<HomePage> {
               Icon(
                 Icons.file_present_sharp,
                 color: Colors.white,
-                size: 28,
+                size: 30,
               ),
               SizedBox(width: 13),
               Text(
                 title,
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 19,
-                  fontWeight: FontWeight.w500
-                ),
-              )
+                style: huruf2
+              ),
+              // IconButton(
+              //   onPressed: (){}, 
+              //   icon: Icon(
+              //     Icons.more_vert,
+              //     size: 28,
+              //     color: dua,
+              //   )
+              // ),
             ],
           ),
         ),

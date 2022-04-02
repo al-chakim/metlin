@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:simpan_app/theme.dart';
 
 class AddCategory extends StatefulWidget {
   const AddCategory({ Key? key }) : super(key: key);
@@ -14,38 +15,56 @@ class _AddCategoryState extends State<AddCategory> {
       body: SafeArea(
         child: ListView(
           children: [
+            SizedBox(height: 10,),
             Row(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: 15, top: 20),
-                  child: IconButton(
-                    onPressed: (){
-                      Navigator.pop(context);
-                    }, 
-                    icon: Icon(Icons.arrow_back)
-                  ),
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children:[
+                IconButton(
+                  onPressed: (){}, 
+                  icon: Icon(
+                    Icons.arrow_back
+                  )
                 ),
-              Padding(
-                padding: const EdgeInsets.only(left: 80, top: 23),
-                child: Text(
+                //SizedBox(width: 1,),
+                Text(
                   'Add Category',
-                  style: TextStyle(
-                    fontWeight: FontWeight.w600,
-                    fontSize: 19
-                  ),
+                  style: huruf4,
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(left: 67, top: 28),
-                child: Text(
-                  'Save',
-                  style: TextStyle(
-                    fontWeight: FontWeight.w500,
-                    fontSize: 16
-                  ),
-                ),
-              )
+                TextButton(
+                  onPressed: (){}, 
+                  child: Text(
+                    'Save',
+                    style: huruf3,
+                  )
+                )
               ],
+            ),
+            SizedBox(height: 50,),
+            Padding(
+              padding: const EdgeInsets.only(left: 20, right: 20),
+              child: Row(
+                children: [
+                  Text(
+                    'Name  : ',
+                    style: huruf3,
+                  ),
+                  Text(
+                    'Cigaretter',
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w400
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 3,),
+            Divider(
+              color: satu,
+              indent: 80,
+              endIndent: 28,
+              height: 1.5,
+              thickness: 1.5,
             )
           ],
         ),
