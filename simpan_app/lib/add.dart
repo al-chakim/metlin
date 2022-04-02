@@ -20,7 +20,9 @@ class _AddCategoryState extends State<AddCategory> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children:[
                 IconButton(
-                  onPressed: (){}, 
+                  onPressed: (){
+                    Navigator.pop(context);
+                  }, 
                   icon: Icon(
                     Icons.arrow_back
                   )
@@ -49,7 +51,7 @@ class _AddCategoryState extends State<AddCategory> {
                     style: huruf3,
                   ),
                   Text(
-                    'Cigaretter',
+                    'Cigarette',
                     style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.w400
