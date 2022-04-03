@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:simpan_app/add.dart';
+import 'package:simpan_app/food.dart';
 import 'package:simpan_app/theme.dart';
 
 class HomePage extends StatefulWidget {
@@ -38,7 +39,15 @@ class _HomePageState extends State<HomePage> {
           color: Colors.transparent,
           child: InkWell(
             borderRadius: BorderRadius.circular(10),
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context, MaterialPageRoute(
+                  builder: (context) {
+                    return foof();
+                  },
+                )
+              );
+            },
             child: Row(
               children: [
                 Icon(
