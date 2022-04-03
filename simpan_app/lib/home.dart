@@ -34,27 +34,34 @@ class _HomePageState extends State<HomePage> {
           color: Color(0xff4B0082),
           borderRadius: BorderRadius.circular(15)
         ),
-        child: Row(
-          children: [
-            Icon(
-              Icons.file_present_sharp,
-              color: Colors.white,
-              size: 30,
+        child: Material(
+          color: Colors.transparent,
+          child: InkWell(
+            borderRadius: BorderRadius.circular(10),
+            onTap: () {},
+            child: Row(
+              children: [
+                Icon(
+                  Icons.file_present_sharp,
+                  color: Colors.white,
+                  size: 30,
+                ),
+                SizedBox(width: 13),
+                Text(
+                  title,
+                  style: huruf2
+                ),
+                // IconButton(
+                //   onPressed: (){}, 
+                //   icon: Icon(
+                //     Icons.more_vert,
+                //     size: 28,
+                //     color: dua,
+                //   )
+                // ),
+              ],
             ),
-            SizedBox(width: 13),
-            Text(
-              title,
-              style: huruf2
-            ),
-            // IconButton(
-            //   onPressed: (){}, 
-            //   icon: Icon(
-            //     Icons.more_vert,
-            //     size: 28,
-            //     color: dua,
-            //   )
-            // ),
-          ],
+          ),
         ),
       );
     }
