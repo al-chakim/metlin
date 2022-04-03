@@ -17,58 +17,60 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
 
-    Widget option(String title){
-      return Container(
-        padding: EdgeInsets.only(
-          left: 23, 
-          top: 15, 
-          bottom: 15, 
-          right: 23 
-        ),
-        margin: EdgeInsets.only(
-          left: 25, 
-          right: 25,
-          top: 15,
-          bottom: 5
-        ),
-        decoration: BoxDecoration(
-          color: Color(0xff4B0082),
-          borderRadius: BorderRadius.circular(15)
-        ),
-        child: Material(
-          color: Colors.transparent,
-          child: InkWell(
-            borderRadius: BorderRadius.circular(10),
-            onTap: () {
-              Navigator.push(
-                context, MaterialPageRoute(
-                  builder: (context) {
-                    return foof();
-                  },
-                )
-              );
-            },
-            child: Row(
-              children: [
-                Icon(
-                  Icons.file_present_sharp,
-                  color: Colors.white,
-                  size: 30,
-                ),
-                SizedBox(width: 13),
-                Text(
-                  title,
-                  style: huruf2
-                ),
-                // IconButton(
-                //   onPressed: (){}, 
-                //   icon: Icon(
-                //     Icons.more_vert,
-                //     size: 28,
-                //     color: dua,
-                //   )
-                // ),
-              ],
+    Widget option(int index, String title){
+      return GestureDetector(
+        child: Container(
+          padding: EdgeInsets.only(
+            left: 23, 
+            top: 15, 
+            bottom: 15, 
+            right: 23 
+          ),
+          margin: EdgeInsets.only(
+            left: 25, 
+            right: 25,
+            top: 15,
+            bottom: 5
+          ),
+          decoration: BoxDecoration(
+            color: Color(0xff4B0082),
+            borderRadius: BorderRadius.circular(15)
+          ),
+          child: Material(
+            color: Colors.transparent,
+            child: InkWell(
+              borderRadius: BorderRadius.circular(10),
+              onTap: () {
+                Navigator.push(
+                  context, MaterialPageRoute(
+                    builder: (context) {
+                      return foof() ;
+                    },
+                  )
+                );
+              },
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.file_present_sharp,
+                    color: Colors.white,
+                    size: 30,
+                  ),
+                  SizedBox(width: 13),
+                  Text(
+                    title,
+                    style: huruf2
+                  ),
+                  // IconButton(
+                  //   onPressed: (){}, 
+                  //   icon: Icon(
+                  //     Icons.more_vert,
+                  //     size: 28,
+                  //     color: dua,
+                  //   )
+                  // ),
+                ],
+              ),
             ),
           ),
         ),
@@ -134,10 +136,10 @@ class _HomePageState extends State<HomePage> {
                 ),
                 SizedBox(height: 10,),
                 //panggil class di sini
-                option('Food'),
-                option('Drink'),
-                option('Soap'),
-                option('Groceries'),
+                option(0, 'Food'),
+                option(1, 'Drink'),
+                option(2, 'Soap'),
+                option(3, 'Groceries'),
               ],
             ),
           ],
