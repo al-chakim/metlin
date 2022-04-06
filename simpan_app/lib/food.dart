@@ -13,6 +13,20 @@ class _foofState extends State<foof> {
   Widget build(BuildContext context) {
 
     return Scaffold(
+
+      appBar: AppBar(
+        backgroundColor: Color(0xff4B0082),
+        title: Center(
+          child: Text('Food')
+        ),
+        actions: [
+          IconButton(
+            onPressed: (){}, 
+            icon: Icon(Icons.edit)
+          )
+        ],
+      ),
+
       floatingActionButton: FloatingActionButton(
         onPressed: (){
           // Navigator.push(
@@ -32,27 +46,83 @@ class _foofState extends State<foof> {
       body: SafeArea(
         child: ListView(
           children: [
-            SizedBox(height: 10,),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                IconButton(
-                  onPressed: (){
-                    Navigator.pop(context);
-                  }, 
-                  icon: Icon(Icons.arrow_back)
-                ),
-                Text(
-                  'Food',
-                  style: huruf4,
-                ),
-                IconButton(
-                  onPressed: (){}, 
-                  icon: Icon(Icons.more_vert)
-                ),
-              ],
+            SizedBox(height: 20,),
+            // Row(
+            //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            //   children: [
+            //     IconButton(
+            //       onPressed: (){
+            //         Navigator.pop(context);
+            //       }, 
+            //       icon: Icon(Icons.arrow_back)
+            //     ),
+            //     Text(
+            //       'Food',
+            //       style: huruf4,
+            //     ),
+            //     IconButton(
+            //       onPressed: (){}, 
+            //       icon: Icon(Icons.more_vert)
+            //     ),
+            //   ],
+            // ),
+            Container(
+              // width: 400,
+              // height: 55,
+              margin: EdgeInsets.only(
+                left: 20,
+                right: 20,
+                top: 15,
+                bottom: 5
+              ),
+              padding: EdgeInsets.only(
+                left: 20, 
+                right: 20,
+                top: 15,
+                bottom: 15
+              ),
+              decoration: BoxDecoration(
+                color: Color(0xff4B0082),
+                borderRadius: BorderRadius.circular(15)
+              ),
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Text(
+                        'id',
+                        style: huruf5,
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Text(
+                        'Name',
+                        style: huruf5,
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Text(
+                        'Total',
+                        style: huruf5,
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Text(
+                        'Price',
+                        style: huruf5,
+                      ),
+                    ],
+                  ),
+                ],
+              )
+              
             ),
-            
           ]
         )
       ),
