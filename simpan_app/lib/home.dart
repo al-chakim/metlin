@@ -17,82 +17,82 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
 
-    Widget option(int index, String title){
-      return GestureDetector(
-        child: Container(
-          padding: EdgeInsets.only(
-            left: 23, 
-            top: 15, 
-            bottom: 15, 
-            right: 23 
-          ),
-          margin: EdgeInsets.only(
-            left: 25, 
-            right: 25,
-            top: 15,
-            bottom: 5
-          ),
-          decoration: BoxDecoration(
-            color: Color(0xff4B0082),
-            borderRadius: BorderRadius.circular(15)
-          ),
-          child: Material(
-            color: Colors.transparent,
-            child: InkWell(
-              borderRadius: BorderRadius.circular(10),
-              onTap: () {
-                Navigator.push(
-                  context, MaterialPageRoute(
-                    builder: (context) {
-                      return foof() ;
-                    },
-                  )
-                );
-              },
-              child: Row(
-                children: [
-                  Icon(
-                    Icons.file_present_sharp,
-                    color: Colors.white,
-                    size: 30,
-                  ),
-                  SizedBox(width: 13),
-                  Text(
-                    title,
-                    style: huruf2
-                  ),
-                  // IconButton(
-                  //   onPressed: (){}, 
-                  //   icon: Icon(
-                  //     Icons.more_vert,
-                  //     size: 28,
-                  //     color: dua,
-                  //   )
-                  // ),
-                ],
-              ),
-            ),
-          ),
-        ),
-      );
-    }
+    // Widget option(int index, String title){
+    //   return GestureDetector(
+    //     child: Container(
+    //       padding: EdgeInsets.only(
+    //         left: 23, 
+    //         top: 15, 
+    //         bottom: 15, 
+    //         right: 23 
+    //       ),
+    //       margin: EdgeInsets.only(
+    //         left: 25, 
+    //         right: 25,
+    //         top: 15,
+    //         bottom: 5
+    //       ),
+    //       decoration: BoxDecoration(
+    //         color: Color(0xff4B0082),
+    //         borderRadius: BorderRadius.circular(15)
+    //       ),
+    //       child: Material(
+    //         color: Colors.transparent,
+    //         child: InkWell(
+    //           borderRadius: BorderRadius.circular(10),
+    //           onTap: () {
+    //             Navigator.push(
+    //               context, MaterialPageRoute(
+    //                 builder: (context) {
+    //                   return foof() ;
+    //                 },
+    //               )
+    //             );
+    //           },
+    //           child: Row(
+    //             children: [
+    //               Icon(
+    //                 Icons.file_present_sharp,
+    //                 color: Colors.white,
+    //                 size: 30,
+    //               ),
+    //               SizedBox(width: 13),
+    //               Text(
+    //                 title,
+    //                 style: huruf2
+    //               ),
+    //               // IconButton(
+    //               //   onPressed: (){}, 
+    //               //   icon: Icon(
+    //               //     Icons.more_vert,
+    //               //     size: 28,
+    //               //     color: dua,
+    //               //   )
+    //               // ),
+    //             ],
+    //           ),
+    //         ),
+    //       ),
+    //     ),
+    //   );
+    // }
 
     return Scaffold(
-      floatingActionButton: FloatingActionButton(
-        onPressed: (){
-          Navigator.push(
-            context, MaterialPageRoute(
-              builder: (context) => AddCategory()
-            )
-          );
-        },
-        backgroundColor: Color(0xff4B0082),
-        child: Icon(
-          Icons.add,
-          size: 28,
-        ),
-      ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      // floatingActionButton: FloatingActionButton(
+      //   onPressed: (){
+      //     Navigator.push(
+      //       context, MaterialPageRoute(
+      //         builder: (context) => AddCategory()
+      //       )
+      //     );
+      //   },
+      //   backgroundColor: Color(0xff4B0082),
+      //   child: Icon(
+      //     Icons.add,
+      //     size: 28,
+      //   ),
+      // ),
+      // floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
 
       body: SafeArea(
         child: ListView(
@@ -136,10 +136,228 @@ class _HomePageState extends State<HomePage> {
                 ),
                 SizedBox(height: 10,),
                 //panggil class di sini
-                option(0, 'Food'),
-                option(1, 'Drink'),
-                option(2, 'Soap'),
-                option(3, 'Groceries'),
+                // option(0, 'Food'),
+                // option(1, 'Drink'),
+                // option(2, 'Soap'),
+                // option(3, 'Groceries'),
+                Container(
+                  padding: EdgeInsets.only(
+                    left: 23, 
+                    //top: 15, 
+                    //bottom: 15, 
+                    right: 23 
+                  ),
+                  margin: EdgeInsets.only(
+                    left: 25, 
+                    right: 25,
+                    top: 15,
+                    bottom: 5
+                  ),
+                  height: 55,
+                  width: 400,
+                  decoration: BoxDecoration(
+                    color: Color(0xff4B0082),
+                    borderRadius: BorderRadius.circular(15)
+                  ),
+                  child: Material(
+                    borderRadius: BorderRadius.circular(15),
+                    color: Colors.transparent,
+                    child: InkWell(
+                      borderRadius: BorderRadius.circular(15),
+                      onTap: (){
+                        Navigator.push(
+                          context, MaterialPageRoute(
+                            builder: (context) {
+                              return foof() ;
+                            },
+                          )
+                        );
+                      },
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.file_present,
+                            color: Colors.white,
+                            size: 30,
+                          ),
+                          SizedBox(width: 10,),
+                          Text(
+                            'Food',
+                            style: huruf2,
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.only(
+                    left: 23, 
+                    //top: 15, 
+                    //bottom: 15, 
+                    right: 23 
+                  ),
+                  margin: EdgeInsets.only(
+                    left: 25, 
+                    right: 25,
+                    top: 15,
+                    bottom: 5
+                  ),
+                  height: 55,
+                  width: 400,
+                  decoration: BoxDecoration(
+                    color: Color(0xff4B0082),
+                    borderRadius: BorderRadius.circular(15)
+                  ),
+                  child: Material(
+                    borderRadius: BorderRadius.circular(15),
+                    color: Colors.transparent,
+                    child: InkWell(
+                      borderRadius: BorderRadius.circular(15),
+                      onTap: (){},
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.file_present,
+                            color: Colors.white,
+                            size: 30,
+                          ),
+                          SizedBox(width: 10,),
+                          Text(
+                            'Drink',
+                            style: huruf2,
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.only(
+                    left: 23, 
+                    //top: 15, 
+                    //bottom: 15, 
+                    right: 23 
+                  ),
+                  margin: EdgeInsets.only(
+                    left: 25, 
+                    right: 25,
+                    top: 15,
+                    bottom: 5
+                  ),
+                  height: 55,
+                  width: 400,
+                  decoration: BoxDecoration(
+                    color: Color(0xff4B0082),
+                    borderRadius: BorderRadius.circular(15)
+                  ),
+                  child: Material(
+                    borderRadius: BorderRadius.circular(15),
+                    color: Colors.transparent,
+                    child: InkWell(
+                      borderRadius: BorderRadius.circular(15),
+                      onTap: (){},
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.file_present,
+                            color: Colors.white,
+                            size: 30,
+                          ),
+                          SizedBox(width: 10,),
+                          Text(
+                            'Soap',
+                            style: huruf2,
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.only(
+                    left: 23, 
+                    //top: 15, 
+                    //bottom: 15, 
+                    right: 23 
+                  ),
+                  margin: EdgeInsets.only(
+                    left: 25, 
+                    right: 25,
+                    top: 15,
+                    bottom: 5
+                  ),
+                  height: 55,
+                  width: 400,
+                  decoration: BoxDecoration(
+                    color: Color(0xff4B0082),
+                    borderRadius: BorderRadius.circular(15)
+                  ),
+                  child: Material(
+                    borderRadius: BorderRadius.circular(15),
+                    color: Colors.transparent,
+                    child: InkWell(
+                      borderRadius: BorderRadius.circular(15),
+                      onTap: (){},
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.file_present,
+                            color: Colors.white,
+                            size: 30,
+                          ),
+                          SizedBox(width: 10,),
+                          Text(
+                            'Groceries',
+                            style: huruf2,
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.only(
+                    left: 23, 
+                    //top: 15, 
+                    //bottom: 15, 
+                    right: 23 
+                  ),
+                  margin: EdgeInsets.only(
+                    left: 25, 
+                    right: 25,
+                    top: 15,
+                    bottom: 5
+                  ),
+                  height: 55,
+                  width: 400,
+                  decoration: BoxDecoration(
+                    color: Color(0xff4B0082),
+                    borderRadius: BorderRadius.circular(15)
+                  ),
+                  child: Material(
+                    borderRadius: BorderRadius.circular(15),
+                    color: Colors.transparent,
+                    child: InkWell(
+                      borderRadius: BorderRadius.circular(15),
+                      onTap: (){},
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.file_present,
+                            color: Colors.white,
+                            size: 30,
+                          ),
+                          SizedBox(width: 10,),
+                          Text(
+                            'More Data',
+                            style: huruf2,
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                )
               ],
             ),
           ],
