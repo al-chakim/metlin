@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:simpan_app/add.dart';
+import 'package:simpan_app/addCategory.dart';
 import 'package:simpan_app/food.dart';
 import 'package:simpan_app/theme.dart';
 
@@ -89,13 +89,16 @@ class _HomePageState extends State<HomePage> {
               Option(
                 title: "Drink",
                 press: () {
-                  Navigator.push(context, MaterialPageRoute(
-                    builder: (context) {
-                      return foof();
-                    },
-                  ));
+                  // Navigator.push(context, MaterialPageRoute(
+                  //   builder: (context) {
+                  //     return foof();
+                  //   },
+                  // ));
                 },
               ),
+              Option(title: 'Soap', press: () {}),
+              Option(title: 'Groceries', press: () {}),
+              Option(title: 'More data', press: () {})
 
               // option(0, 'Food'),
               // option(1, 'Drink'),
@@ -341,10 +344,19 @@ class Option extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       child: Container(
-        padding: EdgeInsets.only(left: 23, top: 15, bottom: 15, right: 23),
+        padding: EdgeInsets.only(
+          left: 23, 
+          // top: 15, 
+          // bottom: 15, 
+          right: 23
+        ),
         margin: EdgeInsets.only(left: 25, right: 25, top: 15, bottom: 5),
+        height: 58,
+        width: 400,
         decoration: BoxDecoration(
-            color: Color(0xff4B0082), borderRadius: BorderRadius.circular(15)),
+          color: Color(0xff6504AD), 
+          borderRadius: BorderRadius.circular(15)
+        ),
         child: Material(
           color: Colors.transparent,
           child: InkWell(
@@ -359,14 +371,6 @@ class Option extends StatelessWidget {
                 ),
                 SizedBox(width: 13),
                 Text(title, style: huruf2),
-                // IconButton(
-                //   onPressed: (){},
-                //   icon: Icon(
-                //     Icons.more_vert,
-                //     size: 28,
-                //     color: dua,
-                //   )
-                // ),
               ],
             ),
           ),

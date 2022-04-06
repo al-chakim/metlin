@@ -29,6 +29,6 @@ TextStyle huruf4 = TextStyle(
 
 TextStyle huruf5 = TextStyle(
   color: dua,
-  fontSize: 19,
-  fontWeight: FontWeight.w300
+  fontSize: 17,
+  fontWeight: FontWeight.w400
 );
