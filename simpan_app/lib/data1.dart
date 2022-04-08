@@ -30,7 +30,7 @@ class _data1State extends State<data1> {
       body: SafeArea(
         child: ListView(
           children: [
-            SizedBox(height: 30,),
+            SizedBox(height: 50,),
             Padding(
               padding: const EdgeInsets.only(left: 20, right: 20),
               child: Column(
@@ -38,7 +38,7 @@ class _data1State extends State<data1> {
                   Row(
                     children: [
                       Text(
-                        'Name',
+                        'Name  :',
                         style: huruf3,
                       ),
                       //TextField()
@@ -48,7 +48,7 @@ class _data1State extends State<data1> {
                   Row(
                     children: [
                       Text(
-                        'Total',
+                        'Total    :',
                         style: huruf3,
                       ),
                     ],
@@ -57,7 +57,7 @@ class _data1State extends State<data1> {
                   Row(
                     children: [
                       Text(
-                        'Price',
+                        'Price    :',
                         style: huruf3,
                       )
                     ],
@@ -65,6 +65,7 @@ class _data1State extends State<data1> {
                 ],
               ),
             ),
+            SizedBox(height: 50,),
             Container(
               height: 30,
               width: 30,
@@ -86,6 +87,16 @@ class _data1State extends State<data1> {
                   ),
                 ),
               ),
+            ),
+            SizedBox(height: 400,),
+            Column(
+              children: [
+                Text(
+                  'Recheck Your Data!\n@simpan',
+                  style: huruf4,
+                  textAlign: TextAlign.center,
+                )
+              ],
             )
           ],
         )
