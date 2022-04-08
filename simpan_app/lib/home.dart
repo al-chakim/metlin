@@ -16,21 +16,21 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        // floatingActionButton: FloatingActionButton(
-        //   onPressed: (){
-        //     Navigator.push(
-        //       context, MaterialPageRoute(
-        //         builder: (context) => AddCategory()
-        //       )
-        //     );
-        //   },
-        //   backgroundColor: Color(0xff4B0082),
-        //   child: Icon(
-        //     Icons.add,
-        //     size: 28,
-        //   ),
-        // ),
-        // floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+        floatingActionButton: FloatingActionButton(
+          onPressed: (){
+            // Navigator.push(
+            //   context, MaterialPageRoute(
+            //     builder: (context) => AddCategory()
+            //   )
+            // );
+          },
+          backgroundColor: Color(0xff4B0082),
+          child: Icon(
+            Icons.add,
+            size: 28,
+          ),
+        ),
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
 
         body: SafeArea(
       child: ListView(
