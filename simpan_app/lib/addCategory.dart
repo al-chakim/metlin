@@ -50,13 +50,13 @@ class _AddCategoryState extends State<AddCategory> {
                     'Name  : ',
                     style: huruf3,
                   ),
-                  Text(
-                    'Cigarette',
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w400
-                    ),
-                  ),
+                  // Text(
+                  //   'Cigarette',
+                  //   style: TextStyle(
+                  //     fontSize: 16,
+                  //     fontWeight: FontWeight.w400
+                  //   ),
+                  // ),
                 ],
               ),
             ),

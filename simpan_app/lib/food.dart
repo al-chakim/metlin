@@ -21,11 +21,11 @@ class _foofState extends State<foof> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          // Navigator.push(
-          //   context, MaterialPageRoute(
-          //     builder: (context) => data()
-          //   )
-          // );
+          Navigator.push(
+            context, MaterialPageRoute(
+              builder: (context) => data()
+            )
+          );
         },
         backgroundColor: Color(0xff4B0082),
         child: Icon(
@@ -179,12 +179,12 @@ class Data extends StatelessWidget {
         width: 400,
         height: 100,
         margin: EdgeInsets.only(left: 20, right: 20, top: 15, bottom: 5),
-        padding: EdgeInsets.only(
-          left: 23,
-          right: 23,
-          // top: 15,
-          // bottom: 15
-        ),
+        // padding: EdgeInsets.only(
+        //   left: 23,
+        //   right: 23,
+        //   // top: 15,
+        //   // bottom: 15
+        // ),
         decoration: BoxDecoration(
             color: Color(0xff6504AD), borderRadius: BorderRadius.circular(15)),
         child: Material(
@@ -194,82 +194,85 @@ class Data extends StatelessWidget {
             onTap: press,
             child: Padding(
               padding: const EdgeInsets.only(top: 10),
-              child: Column(
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        id,
-                        style: huruf5,
-                      ),
-                      Text(
-                        kunci,
-                        style: huruf5,
-                      )
-                    ],
-                  ),
-                  Divider(
-                    thickness: 1,
-                    height: 1.5,
-                    indent: 0,
-                    endIndent: 0,
-                    color: Colors.white,
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        name,
-                        style: huruf5,
-                      ),
-                      Text(
-                        nama,
-                        style: huruf5,
-                      ),
-                    ],
-                  ),
-                  Divider(
-                    thickness: 1,
-                    height: 1.5,
-                    indent: 0,
-                    endIndent: 0,
-                    color: Colors.white,
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        total,
-                        style: huruf5,
-                      ),
-                      Text(
-                        jumlah,
-                        style: huruf5,
-                      ),
-                    ],
-                  ),
-                  Divider(
-                    thickness: 1,
-                    height: 1.5,
-                    indent: 0,
-                    endIndent: 0,
-                    color: Colors.white,
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        price,
-                        style: huruf5,
-                      ),
-                      Text(
-                        harga,
-                        style: huruf5,
-                      ),
-                    ],
-                  ),
-                ],
+              child: Padding(
+                padding: const EdgeInsets.only(left: 23, right: 23),
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          id,
+                          style: huruf5,
+                        ),
+                        Text(
+                          kunci,
+                          style: huruf5,
+                        )
+                      ],
+                    ),
+                    Divider(
+                      thickness: 1,
+                      height: 1.5,
+                      indent: 0,
+                      endIndent: 0,
+                      color: Colors.white,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          name,
+                          style: huruf5,
+                        ),
+                        Text(
+                          nama,
+                          style: huruf5,
+                        ),
+                      ],
+                    ),
+                    Divider(
+                      thickness: 1,
+                      height: 1.5,
+                      indent: 0,
+                      endIndent: 0,
+                      color: Colors.white,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          total,
+                          style: huruf5,
+                        ),
+                        Text(
+                          jumlah,
+                          style: huruf5,
+                        ),
+                      ],
+                    ),
+                    Divider(
+                      thickness: 1,
+                      height: 1.5,
+                      indent: 0,
+                      endIndent: 0,
+                      color: Colors.white,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          price,
+                          style: huruf5,
+                        ),
+                        Text(
+                          harga,
+                          style: huruf5,
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
               ),
             ),
           ),

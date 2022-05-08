@@ -18,11 +18,11 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
         floatingActionButton: FloatingActionButton(
           onPressed: (){
-            // Navigator.push(
-            //   context, MaterialPageRoute(
-            //     builder: (context) => AddCategory()
-            //   )
-            // );
+            Navigator.push(
+              context, MaterialPageRoute(
+                builder: (context) => AddCategory()
+              )
+            );
           },
           backgroundColor: Color(0xff4B0082),
           child: Icon(
@@ -121,12 +121,12 @@ class Option extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       child: Container(
-        padding: EdgeInsets.only(
-          left: 23, 
-          // top: 15, 
-          // bottom: 15, 
-          right: 23
-        ),
+        // padding: EdgeInsets.only(
+        //   left: 23, 
+        //   // top: 15, 
+        //   // bottom: 15, 
+        //   right: 23
+        // ),
         margin: EdgeInsets.only(left: 25, right: 25, top: 15, bottom: 5),
         height: 58,
         width: 400,
@@ -139,16 +139,19 @@ class Option extends StatelessWidget {
           child: InkWell(
             borderRadius: BorderRadius.circular(10),
             onTap: press,
-            child: Row(
-              children: [
-                Icon(
-                  Icons.file_present_sharp,
-                  color: Colors.white,
-                  size: 30,
-                ),
-                SizedBox(width: 13),
-                Text(title, style: huruf2),
-              ],
+            child: Padding(
+              padding: const EdgeInsets.only(left: 23, right: 23),
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.file_present_sharp,
+                    color: Colors.white,
+                    size: 30,
+                  ),
+                  SizedBox(width: 13),
+                  Text(title, style: huruf2),
+                ],
+              ),
             ),
           ),
         ),
