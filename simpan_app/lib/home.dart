@@ -44,7 +44,7 @@ class _HomePageState extends State<HomePage> {
                 children: [
                   //SizedBox(width: 3,),
                   Image.asset(
-                    'assets/images/scan.png',
+                    'assets/scan.png',
                     height: 215,
                     width: 215,
                   ),

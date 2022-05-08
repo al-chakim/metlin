@@ -35,7 +35,7 @@ class _StartedState extends State<Started> {
                 ),
                 SizedBox(height: 34,),
                 Image.asset(
-                  'assets/images/loker.png',
+                  'assets/loker.png',
                   height: 270,
                   width: 300,
                 ),
