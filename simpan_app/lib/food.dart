@@ -15,9 +15,15 @@ class _foofState extends State<foof> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        //automaticallyImplyLeading: false,
         backgroundColor: Color(0xff4B0082),
         title: Center(child: Text('Food')),
-        actions: [IconButton(onPressed: () {}, icon: Icon(Icons.edit))],
+        actions: [
+          IconButton(
+            onPressed: () {}, 
+            icon: Icon(Icons.search_outlined)
+          )
+        ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
