@@ -21,7 +21,7 @@ class _foofState extends State<foof> {
         actions: [
           IconButton(
             onPressed: () {}, 
-            icon: Icon(Icons.search_outlined)
+            icon: Icon(Icons.search_sharp)
           )
         ],
       ),
