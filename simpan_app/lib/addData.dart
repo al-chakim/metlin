@@ -89,7 +89,12 @@ class _dataState extends State<data> {
                 ),
               ),
             ),
-            SizedBox(height: 400,),
+            SizedBox(height: 40,),
+            Image.asset(
+              'assets/cek.png',
+              height: 200,
+            ),
+            SizedBox(height: 130,),
             Column(
               children: [
                 Text(
