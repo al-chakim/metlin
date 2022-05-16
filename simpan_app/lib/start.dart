@@ -53,7 +53,7 @@ class _StartedState extends State<Started> {
                   backgroundColor: const Color(0xff4B0082),
                   foregroundColor: Colors.white,
                   onPressed: () {
-                    Navigator.push(
+                    Navigator.pushReplacement(
                       context, MaterialPageRoute(
                         builder: (context){
                           return HomePage();
