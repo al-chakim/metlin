@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:simpan_app/theme.dart';
+import 'package:simpan_app/ui/theme.dart';
+import 'package:simpan_app/ui/theme.dart';
 
 class data1 extends StatefulWidget {
   const data1({ Key? key }) : super(key: key);

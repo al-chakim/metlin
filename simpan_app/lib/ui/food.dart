@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:simpan_app/addData.dart';
-import 'package:simpan_app/data1.dart';
-import 'package:simpan_app/theme.dart';
+import 'package:simpan_app/ui/addData.dart';
+import 'package:simpan_app/ui/data1.dart';
+import 'package:simpan_app/ui/theme.dart';
+import 'package:simpan_app/ui/addData.dart';
+import 'package:simpan_app/ui/data1.dart';
+import 'package:simpan_app/ui/theme.dart';
 
 class foof extends StatefulWidget {
   const foof({Key? key}) : super(key: key);

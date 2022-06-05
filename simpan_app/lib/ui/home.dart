@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:simpan_app/addCategory.dart';
-import 'package:simpan_app/food.dart';
-import 'package:simpan_app/theme.dart';
+import 'package:simpan_app/ui/addCategory.dart';
+import 'package:simpan_app/ui/food.dart';
+import 'package:simpan_app/ui/theme.dart';
+import 'package:simpan_app/ui/food.dart';
+import 'package:simpan_app/ui/theme.dart';
+
+import 'addCategory.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);

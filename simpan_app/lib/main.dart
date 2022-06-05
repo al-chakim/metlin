@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:simpan_app/start.dart';
+import 'package:simpan_app/ui/start.dart';
 
 void main() => runApp(Simpan());
 
