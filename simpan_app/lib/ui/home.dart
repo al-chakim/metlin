@@ -14,18 +14,15 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  //int selectedIndex = -1;
+  //int selectedIndex = 0;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         floatingActionButton: FloatingActionButton(
-          onPressed: (){
-            Navigator.push(
-              context, MaterialPageRoute(
-                builder: (context) => AddCategory()
-              )
-            );
+          onPressed: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => AddCategory()));
           },
           backgroundColor: Color(0xff4B0082),
           child: Icon(
@@ -33,80 +30,81 @@ class _HomePageState extends State<HomePage> {
             size: 28,
           ),
         ),
-        floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+        //floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
 
         body: SafeArea(
-      child: ListView(
-        children: [
-          Column(
+          child: ListView(
             children: [
-              SizedBox(
-                height: 25,
-              ),
-              Row(
+              Column(
                 children: [
-                  //SizedBox(width: 3,),
-                  Image.asset(
-                    'assets/scan.png',
-                    height: 215,
-                    width: 215,
+                  SizedBox(
+                    height: 25,
+                  ),
+                  Row(
+                    children: [
+                      //SizedBox(width: 3,),
+                      Image.asset(
+                        'assets/scan.png',
+                        height: 215,
+                        width: 215,
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text(
+                        'Save Your Data \nHere!',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            fontWeight: FontWeight.w600, fontSize: 18),
+                      )
+                    ],
+                  ),
+                  //SizedBox(height: 5,),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 28),
+                    child: Row(
+                      children: [
+                        Text(
+                          'Data Category',
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.w700),
+                        ),
+                      ],
+                    ),
                   ),
                   SizedBox(
-                    width: 10,
+                    height: 10,
                   ),
-                  Text(
-                    'Save Your Data \nHere!',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(fontWeight: FontWeight.w600, fontSize: 18),
-                  )
+                  //panggil class di sini
+
+                  Option(
+                    title: "Food",
+                    press: () {
+                      Navigator.push(context, MaterialPageRoute(
+                        builder: (context) {
+                          return foof();
+                        },
+                      ));
+                    },
+                  ),
+                  Option(
+                    title: "Drink",
+                    press: () {
+                      // Navigator.push(context, MaterialPageRoute(
+                      //   builder: (context) {
+                      //     return foof();
+                      //   },
+                      // ));
+                    },
+                  ),
+                  Option(title: 'Soap', press: () {}),
+                  Option(title: 'Groceries', press: () {}),
+                  Option(title: 'More data', press: () {}),
                 ],
               ),
-              //SizedBox(height: 5,),
-              Padding(
-                padding: const EdgeInsets.only(left: 28),
-                child: Row(
-                  children: [
-                    Text(
-                      'Data Category',
-                      style:
-                          TextStyle(fontSize: 16, fontWeight: FontWeight.w700),
-                    ),
-                  ],
-                ),
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              //panggil class di sini
-
-              Option(
-                title: "Food",
-                press: () {
-                  Navigator.push(context, MaterialPageRoute(
-                    builder: (context) {
-                      return foof();
-                    },
-                  ));
-                },
-              ),
-              Option(
-                title: "Drink",
-                press: () {
-                  // Navigator.push(context, MaterialPageRoute(
-                  //   builder: (context) {
-                  //     return foof();
-                  //   },
-                  // ));
-                },
-              ),
-              Option(title: 'Soap', press: () {}),
-              Option(title: 'Groceries', press: () {}),
-              Option(title: 'More data', press: () {}),
             ],
           ),
-        ],
-      ),
-    ));
+        ));
   }
 }
 
