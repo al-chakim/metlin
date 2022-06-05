@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:simpan_app/ui/addCategory.dart';
-import 'package:simpan_app/ui/food.dart';
-import 'package:simpan_app/ui/theme.dart';
-import 'package:simpan_app/ui/food.dart';
-import 'package:simpan_app/ui/theme.dart';
+import 'package:simpan/ui/addCategory.dart';
+import 'package:simpan/ui/food.dart';
+import 'package:simpan/ui/theme.dart';
+import 'package:simpan/ui/food.dart';
+import 'package:simpan/ui/theme.dart';
 
 import 'addCategory.dart';
 

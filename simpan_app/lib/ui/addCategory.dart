@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:simpan_app/ui/theme.dart';
-import 'package:simpan_app/ui/theme.dart';
+import 'package:simpan/ui/theme.dart';
+import 'package:simpan/ui/theme.dart';
 
 class AddCategory extends StatefulWidget {
   const AddCategory({ Key? key }) : super(key: key);

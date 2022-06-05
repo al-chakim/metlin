@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:simpan_app/ui/home.dart';
-import 'package:simpan_app/ui/theme.dart';
-import 'package:simpan_app/ui/home.dart';
-import 'package:simpan_app/ui/theme.dart';
+import 'package:simpan/ui/home.dart';
+import 'package:simpan/ui/theme.dart';
+import 'package:simpan/ui/home.dart';
+import 'package:simpan/ui/theme.dart';
 
 class Started extends StatefulWidget {
   const Started({ Key? key }) : super(key: key);
