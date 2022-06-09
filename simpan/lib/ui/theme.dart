@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 
 Color satu = Color(0xff000000);
 Color dua = Color(0xffFFFFFF);
+Color tiga = Color(0xff4B0082);
+Color empat = Color(0xffFA0000);
+Color lima = Color(0xffDDDDDD);
 
 TextStyle huruf1 = TextStyle(
   //color: satu
@@ -37,4 +40,10 @@ TextStyle huruf6 = TextStyle(
   color: dua,
   fontSize: 14,
   fontWeight: FontWeight.w400
+);
+
+TextStyle huruf7 = TextStyle(
+  color: satu,
+  fontSize: 16,
+  fontWeight: FontWeight.w700
 );

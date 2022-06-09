@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:simpan/ui/home.dart';
+import 'package:simpan/ui/login.dart';
 import 'package:simpan/ui/theme.dart';
 import 'package:simpan/ui/home.dart';
 import 'package:simpan/ui/theme.dart';
@@ -58,7 +59,7 @@ class _StartedState extends State<Started> {
                     Navigator.pushReplacement(
                       context, MaterialPageRoute(
                         builder: (context){
-                          return HomePage();
+                          return login();
                         }
                       )
                     );
