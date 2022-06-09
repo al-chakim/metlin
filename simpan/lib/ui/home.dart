@@ -123,18 +123,16 @@ class Option extends StatelessWidget {
     return GestureDetector(
       child: Container(
         // padding: EdgeInsets.only(
-        //   left: 23, 
-        //   // top: 15, 
-        //   // bottom: 15, 
+        //   left: 23,
+        //   // top: 15,
+        //   // bottom: 15,
         //   right: 23
         // ),
         margin: EdgeInsets.only(left: 25, right: 25, top: 15, bottom: 5),
         height: 58,
         width: 400,
         decoration: BoxDecoration(
-          color: Color(0xff6504AD), 
-          borderRadius: BorderRadius.circular(15)
-        ),
+            color: Color(0xff6504AD), borderRadius: BorderRadius.circular(15)),
         child: Material(
           color: Colors.transparent,
           child: InkWell(

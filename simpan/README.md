@@ -1,4 +1,4 @@
-# simpan_app
+# simpan
 
 A new Flutter project.
 
