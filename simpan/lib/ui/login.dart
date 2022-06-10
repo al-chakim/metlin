@@ -100,13 +100,14 @@ class _loginState extends State<login> {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     //Text('G', style: huruf2.copyWith(fontSize: 18),),
-                                    Icon(
-                                      Ikon.google,
-                                      size: 18,
-                                      color: tiga,
-                                    ),
+                                    // Icon(
+                                    //   Ikon.google,
+                                    //   size: 18,
+                                    //   color: tiga,
+                                    //),
+                                    Image.asset('assets/gug.png', height: 30,),
                                     SizedBox(
-                                      width: 5,
+                                      width: 3,
                                     ),
                                     Text(
                                       'Google',
