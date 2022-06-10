@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:simpan/ui/addCategory.dart';
 import 'package:simpan/ui/food.dart';
+import 'package:simpan/ui/profile.dart';
 import 'package:simpan/ui/theme.dart';
 
 import 'addCategory.dart';
@@ -36,12 +37,16 @@ class _HomePageState extends State<HomePage> {
           automaticallyImplyLeading: false,
           title: Text('Simpan'),
           actions: [
-            Icon(Icons.favorite),
-            Padding(
-              padding: EdgeInsets.symmetric(horizontal: 16),
-              child: Icon(Icons.search),
-            ),
-            Icon(Icons.more_vert),
+            IconButton(
+              onPressed: (){
+                Navigator.push(
+                  context, MaterialPageRoute (
+                    builder: (context) => profile()
+                  )
+                );
+              }, 
+              icon: Icon(Icons.account_circle)
+            )
           ],
           backgroundColor: tiga,
         ),
