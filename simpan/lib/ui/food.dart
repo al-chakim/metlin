@@ -25,6 +25,7 @@ class _foofState extends State<foof> {
           )
         ],
       ),
+
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           Navigator.push(
@@ -39,7 +40,8 @@ class _foofState extends State<foof> {
           size: 28,
         ),
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      //floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+
       body: SafeArea(
           child: ListView(children: [
         SizedBox(
