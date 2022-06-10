@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:simpan/ui/login.dart';
 import 'package:simpan/ui/theme.dart';
 
+import 'daftar.dart';
+
 
 class Started extends StatefulWidget {
   const Started({Key? key}) : super(key: key);
@@ -110,7 +112,12 @@ class _StartedState extends State<Started> {
                   child: Material(
                     color: Colors.transparent,
                     child: InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Daftar()));
+                      },
                       child: Center(
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,

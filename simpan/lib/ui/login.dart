@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:simpan/ui/daftar.dart';
 import 'package:simpan/ui/home.dart';
 import '../icon/ikon_icons.dart';
 import 'theme.dart';
@@ -24,9 +25,34 @@ class _loginState extends State<login> {
                   SizedBox(
                     height: 100,
                   ),
-                  Text(
-                    'Sign In',
-                    style: huruf7.copyWith(fontSize: 35),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        'S',
+                        style: huruf7.copyWith(fontSize: 35, color: tiga),
+                      ),
+                      Text(
+                        'i',
+                        style: huruf7.copyWith(fontSize: 35),
+                      ),
+                      Text(
+                        'm',
+                        style: huruf7.copyWith(fontSize: 35, color: tiga),
+                      ),
+                      Text(
+                        'p',
+                        style: huruf7.copyWith(fontSize: 35),
+                      ),
+                      Text(
+                        'a',
+                        style: huruf7.copyWith(fontSize: 35, color: tiga),
+                      ),
+                      Text(
+                        'n',
+                        style: huruf7.copyWith(fontSize: 35),
+                      ),
+                    ],
                   ),
                   SizedBox(
                     height: 20,
@@ -220,7 +246,7 @@ class _loginState extends State<login> {
                         },
                         child: Center(
                           child: Text(
-                            'Login',
+                            'Sign In',
                             style: huruf1.copyWith(fontSize: 17.5, color: dua),
                           ),
                         ),
@@ -239,7 +265,12 @@ class _loginState extends State<login> {
                             color: Colors.black54, fontSize: 15),
                       ),
                       TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Daftar()));
+                          },
                           child: Text(
                             'Sign Up',
                             style: huruf2.copyWith(
