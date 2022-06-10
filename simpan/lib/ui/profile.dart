@@ -184,26 +184,29 @@ class _profileState extends State<profile> {
               // SizedBox(
               //   height: 25,
               // ),
-              Row(
-                // mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  Icon(Icons.security_sharp),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Text('Kebijakan Privasi'),
-                  SizedBox(
-                    width: 75,
-                  ),
-                  //Text('Cek riwayat & pesanan aktif'),
-                  SizedBox(
-                    width: 128,
-                  ),
-                  Icon(
-                    Icons.arrow_forward_ios,
-                    size: 18,
-                  )
-                ],
+              ListTile(
+                onTap: (){},
+                title: Row(
+                  // mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Icon(Icons.security_sharp),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Text('Kebijakan Privasi'),
+                    SizedBox(
+                      width: 75,
+                    ),
+                    //Text('Cek riwayat & pesanan aktif'),
+                    SizedBox(
+                      width: 110,
+                    ),
+                    Icon(
+                      Icons.arrow_forward_ios,
+                      size: 18,
+                    )
+                  ],
+                ),
               ),
             ],
           ),
