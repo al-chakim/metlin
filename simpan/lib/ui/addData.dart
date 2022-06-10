@@ -33,7 +33,7 @@ class _dataState extends State<data> {
             height: 50,
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 20, right: 20),
+            padding: const EdgeInsets.only(left: 10, right: 10),
             child: Column(
               children: [
                 Row(
@@ -44,10 +44,10 @@ class _dataState extends State<data> {
                     ),
                     Container(
                       height: 45,
-                      width: 255,
+                      width: 290,
                       //padding: EdgeInsets.only(left: 20, top: 6),
                       margin: EdgeInsets.only(
-                          right: 20, left: 20, top: 10, bottom: 10),
+                          right: 0, left: 10, top: 10, bottom: 10),
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           color: Colors.transparent),
@@ -85,10 +85,10 @@ class _dataState extends State<data> {
                     ),
                     Container(
                       height: 45,
-                      width: 255,
+                      width: 290,
                       //padding: EdgeInsets.only(left: 20, top: 6),
                       margin: EdgeInsets.only(
-                          right: 20, left: 20, top: 10, bottom: 10),
+                          right: 0, left: 0, top: 10, bottom: 10),
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           color: Colors.transparent),
@@ -125,10 +125,10 @@ class _dataState extends State<data> {
                     ),
                     Container(
                       height: 45,
-                      width: 255,
+                      width: 290,
                       //padding: EdgeInsets.only(left: 20, top: 6),
                       margin: EdgeInsets.only(
-                          right: 20, left: 20, top: 10, bottom: 10),
+                          right: 0, left: 10, top: 10, bottom: 10),
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           color: Colors.transparent),
