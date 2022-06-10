@@ -74,11 +74,11 @@ class _profileState extends State<profile> {
           SizedBox(
             height: 10,
           ),
-          Padding(
-            padding: const EdgeInsets.only(left: 15, right: 10),
-            child: Column(
-              children: [
-                Row(
+          Column(
+            children: [
+              ListTile(
+                onTap: (){},
+                title: Row(
                   // mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     Icon(Icons.fact_check),
@@ -87,11 +87,11 @@ class _profileState extends State<profile> {
                     ),
                     Text('Catatan'),
                     SizedBox(
-                      width: 67,
+                      width: 64,
                     ),
-                    Text('Cek riwayat & catatan terakhir'),
+                    Text('Cek riwayat & catatan terakhir', style: TextStyle(fontSize: 13),),
                     SizedBox(
-                      width: 10,
+                      width: 15,
                     ),
                     Icon(
                       Icons.arrow_forward_ios,
@@ -99,10 +99,13 @@ class _profileState extends State<profile> {
                     )
                   ],
                 ),
-                SizedBox(
-                  height: 25,
-                ),
-                Row(
+              ),
+              // SizedBox(
+              //   height: 25,
+              // ),
+              ListTile(
+                onTap: (){},
+                title: Row(
                   // mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     Icon(Icons.notifications),
@@ -115,7 +118,7 @@ class _profileState extends State<profile> {
                     ),
                     //Text('Cek riwayat & pesanan aktif'),
                     SizedBox(
-                      width: 176,
+                      width: 165,
                     ),
                     Icon(
                       Icons.arrow_forward_ios,
@@ -123,10 +126,13 @@ class _profileState extends State<profile> {
                     )
                   ],
                 ),
-                SizedBox(
-                  height: 25,
-                ),
-                Row(
+              ),
+              // SizedBox(
+              //   height: 25,
+              // ),
+              ListTile(
+                onTap: (){},
+                title: Row(
                   // mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     Icon(Icons.help_center),
@@ -135,11 +141,11 @@ class _profileState extends State<profile> {
                     ),
                     Text('Bantuan & Laporan Saya'),
                     SizedBox(
-                      width: 75,
+                      width: 45,
                     ),
                     //Text('Cek riwayat & pesanan aktif'),
                     SizedBox(
-                      width: 83,
+                      width: 87,
                     ),
                     Icon(
                       Icons.arrow_forward_ios,
@@ -147,23 +153,26 @@ class _profileState extends State<profile> {
                     )
                   ],
                 ),
-                SizedBox(
-                  height: 25,
-                ),
-                Row(
+              ),
+              // SizedBox(
+              //   height: 25,
+              // ),
+              ListTile(
+                onTap: (){},
+                title: Row(
                   // mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    Icon(Icons.discount),
+                    Icon(Icons.link),
                     SizedBox(
                       width: 10,
                     ),
-                    Text('Voucher Saya'),
+                    Text('Atur akun'),
                     SizedBox(
                       width: 75,
                     ),
                     //Text('Cek riwayat & pesanan aktif'),
                     SizedBox(
-                      width: 150,
+                      width: 162,
                     ),
                     Icon(
                       Icons.arrow_forward_ios,
@@ -171,32 +180,32 @@ class _profileState extends State<profile> {
                     )
                   ],
                 ),
-                SizedBox(
-                  height: 25,
-                ),
-                Row(
-                  // mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    Icon(Icons.security_sharp),
-                    SizedBox(
-                      width: 10,
-                    ),
-                    Text('Kebijakan Privasi'),
-                    SizedBox(
-                      width: 75,
-                    ),
-                    //Text('Cek riwayat & pesanan aktif'),
-                    SizedBox(
-                      width: 128,
-                    ),
-                    Icon(
-                      Icons.arrow_forward_ios,
-                      size: 18,
-                    )
-                  ],
-                ),
-              ],
-            ),
+              ),
+              // SizedBox(
+              //   height: 25,
+              // ),
+              Row(
+                // mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Icon(Icons.security_sharp),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Text('Kebijakan Privasi'),
+                  SizedBox(
+                    width: 75,
+                  ),
+                  //Text('Cek riwayat & pesanan aktif'),
+                  SizedBox(
+                    width: 128,
+                  ),
+                  Icon(
+                    Icons.arrow_forward_ios,
+                    size: 18,
+                  )
+                ],
+              ),
+            ],
           ),
           SizedBox(
             height: 100,
