@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:simpan/ui/home.dart';
 import 'package:simpan/ui/login.dart';
 import 'package:simpan/ui/theme.dart';
 
