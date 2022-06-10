@@ -62,10 +62,7 @@ class _loginState extends State<login> {
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Icon(
-                                      Icons.facebook_sharp,
-                                      color: dua
-                                    ),
+                                    Icon(Icons.facebook_sharp, color: dua),
                                     SizedBox(
                                       width: 5,
                                     ),
@@ -138,10 +135,10 @@ class _loginState extends State<login> {
                     height: 45,
                     width: 330,
                     //padding: EdgeInsets.only(left: 20, top: 6),
-                    margin:
-                        EdgeInsets.only(right: 20, left: 20, top: 10, bottom: 10),
+                    margin: EdgeInsets.only(
+                        right: 20, left: 20, top: 10, bottom: 10),
                     decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
+                        borderRadius: BorderRadius.circular(20),
                         color: Colors.white70),
                     child: Material(
                       color: Colors.transparent,
@@ -168,10 +165,10 @@ class _loginState extends State<login> {
                     height: 45,
                     width: 330,
                     //padding: EdgeInsets.only(left: 20, top: 6),
-                    margin:
-                        EdgeInsets.only(right: 20, left: 20, top: 10, bottom: 10),
+                    margin: EdgeInsets.only(
+                        right: 20, left: 20, top: 10, bottom: 10),
                     decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
+                        borderRadius: BorderRadius.circular(20),
                         color: Colors.white70),
                     child: Material(
                       color: Colors.transparent,
@@ -207,8 +204,8 @@ class _loginState extends State<login> {
                     height: 50,
                     width: 330,
                     //padding: EdgeInsets.only(left: 20, top: 6),
-                    margin:
-                        EdgeInsets.only(right: 20, left: 20, top: 10, bottom: 10),
+                    margin: EdgeInsets.only(
+                        right: 20, left: 20, top: 10, bottom: 10),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(30), color: tiga),
                     child: Material(
@@ -216,10 +213,9 @@ class _loginState extends State<login> {
                       child: InkWell(
                         onTap: () {
                           Navigator.push(
-                            context, MaterialPageRoute(
-                              builder: (context) => HomePage()
-                            )
-                          );
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => HomePage()));
                         },
                         child: Center(
                           child: Text(
@@ -238,8 +234,8 @@ class _loginState extends State<login> {
                     children: [
                       Text(
                         'Don`t have an account?',
-                        style:
-                            huruf1.copyWith(color: Colors.black54, fontSize: 15),
+                        style: huruf1.copyWith(
+                            color: Colors.black54, fontSize: 15),
                       ),
                       TextButton(
                           onPressed: () {},

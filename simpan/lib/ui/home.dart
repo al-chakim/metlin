@@ -34,7 +34,7 @@ class _HomePageState extends State<HomePage> {
         appBar: AppBar(
           //leading: 
           automaticallyImplyLeading: false,
-          title: Text('Home'),
+          title: Text('Simpan'),
           actions: [
             Icon(Icons.favorite),
             Padding(
