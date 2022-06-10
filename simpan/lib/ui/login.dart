@@ -139,7 +139,7 @@ class _loginState extends State<login> {
                         right: 20, left: 20, top: 10, bottom: 10),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
-                        color: Colors.white70),
+                        color: Colors.transparent),
                     child: Material(
                       color: Colors.transparent,
                       child: InkWell(
@@ -169,7 +169,7 @@ class _loginState extends State<login> {
                         right: 20, left: 20, top: 10, bottom: 10),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
-                        color: Colors.white70),
+                        color: Colors.transparent),
                     child: Material(
                       color: Colors.transparent,
                       child: InkWell(
