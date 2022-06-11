@@ -116,7 +116,7 @@ class _loginState extends State<login> {
                               bottom: 10),
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
-                              color: lima),
+                              color: Color(0xffF1F1F1)),
                           child: Material(
                             color: Colors.transparent,
                             child: InkWell(

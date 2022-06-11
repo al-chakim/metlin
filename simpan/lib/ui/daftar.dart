@@ -220,15 +220,16 @@ class _DaftarState extends State<Daftar> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Container(
-                        height: 70,
+                        height: 60,
                         width: 90,
                         margin: EdgeInsets.only(
                           right: 10, left: 10, top: 10, bottom: 10),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
-                          color: satu
+                          color: Color(0xffF1F1F1)
                         ),
                         child: Material(
+                          color: Colors.transparent,
                           child: InkWell(
                             onTap: (){},
                             child: Center(
@@ -238,13 +239,22 @@ class _DaftarState extends State<Daftar> {
                         ),
                       ),
                       Container(
-                        height: 70,
+                        height: 60,
                         width: 90,
                         margin: EdgeInsets.only(
                           right: 10, left: 10, top: 10, bottom: 10),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
-                          color: Colors.black54
+                          color: Color(0xffF1F1F1)
+                        ),
+                        child: Material(
+                          color: Colors.transparent,
+                          child: InkWell(
+                            onTap: (){},
+                            child: Center(
+                              child: Image.asset('assets/gug.png', height: 50,)
+                            ),
+                          ),
                         ),
                       )
                     ],
