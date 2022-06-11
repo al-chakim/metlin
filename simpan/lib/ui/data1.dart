@@ -44,7 +44,7 @@ class _data1State extends State<data1> {
                       height: 45,
                       width: 275,
                       margin: EdgeInsets.only(
-                          right: 0, left: 10, top: 10, bottom: 10),
+                          right: 0, left: 5, top: 10, bottom: 10),
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           color: Colors.transparent),
@@ -75,7 +75,7 @@ class _data1State extends State<data1> {
                       height: 45,
                       width: 274,
                       margin: EdgeInsets.only(
-                          right: 0, left: 10, top: 10, bottom: 10),
+                          right: 0, left: 5, top: 10, bottom: 10),
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           color: Colors.transparent),
@@ -106,7 +106,7 @@ class _data1State extends State<data1> {
                       height: 45,
                       width: 272,
                       margin: EdgeInsets.only(
-                          right: 0, left: 10, top: 10, bottom: 10),
+                          right: 0, left: 5, top: 10, bottom: 10),
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           color: Colors.transparent),
