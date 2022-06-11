@@ -20,7 +20,7 @@ class _StartedState extends State<Started> {
         child: ListView(
           children: [
             SizedBox(
-              height: 100,
+              height: 60,
             ),
             Column(
               children: [
@@ -136,6 +136,7 @@ class _StartedState extends State<Started> {
                     ),
                   ),
                 ),
+                SizedBox(height: 30,),
               ],
             ),
           ],

@@ -65,82 +65,77 @@ class _loginState extends State<login> {
                   //   height: 50,
                   // ),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 12),
-                        child: Container(
-                          height: 40,
-                          width: 160,
-                          //padding: EdgeInsets.only(left: 20, top: 6),
-                          margin: EdgeInsets.only(
-                              //right: 20,
-                              left: 20,
-                              top: 10,
-                              bottom: 10),
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10),
-                              color: Color(0xff3b5998)),
-                          child: Material(
-                            color: Colors.transparent,
-                            child: InkWell(
-                              onTap: () {},
-                              child: Center(
-                                child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Icon(Icons.facebook_sharp, color: dua),
-                                    SizedBox(
-                                      width: 5,
-                                    ),
-                                    Text(
-                                      'facebook',
-                                      style: huruf1.copyWith(color: dua),
-                                    ),
-                                  ],
-                                ),
+                      Container(
+                        height: 40,
+                        width: 150,
+                        //padding: EdgeInsets.only(left: 20, top: 6),
+                        margin: EdgeInsets.only(
+                            //right: 20,
+                            left: 20,
+                            top: 10,
+                            bottom: 10),
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: Color(0xff3b5998)),
+                        child: Material(
+                          color: Colors.transparent,
+                          child: InkWell(
+                            onTap: () {},
+                            child: Center(
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Icon(Icons.facebook_sharp, color: dua),
+                                  SizedBox(
+                                    width: 5,
+                                  ),
+                                  Text(
+                                    'facebook',
+                                    style: huruf1.copyWith(color: dua),
+                                  ),
+                                ],
                               ),
                             ),
                           ),
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 6),
-                        child: Container(
-                          height: 40,
-                          width: 160,
-                          //padding: EdgeInsets.only(left: 20, top: 6),
-                          margin: EdgeInsets.only(
-                              right: 20,
-                              //left: 20,
-                              top: 10,
-                              bottom: 10),
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10),
-                              color: Color(0xffF1F1F1)),
-                          child: Material(
-                            color: Colors.transparent,
-                            child: InkWell(
-                              onTap: () {},
-                              child: Center(
-                                child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    //Text('G', style: huruf2.copyWith(fontSize: 18),),
-                                    // Icon(
-                                    //   Ikon.google,
-                                    //   size: 18,
-                                    //   color: tiga,
-                                    //),
-                                    Image.asset('assets/gug.png', height: 30,),
-                                    SizedBox(
-                                      width: 3,
-                                    ),
-                                    Text(
-                                      'Google',
-                                      style: huruf2.copyWith(color: satu),
-                                    ),
-                                  ],
-                                ),
+                      Container(
+                        height: 40,
+                        width: 150,
+                        //padding: EdgeInsets.only(left: 20, top: 6),
+                        margin: EdgeInsets.only(
+                            right: 20,
+                            //left: 20,
+                            top: 10,
+                            bottom: 10),
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: Color(0xffF1F1F1)),
+                        child: Material(
+                          color: Colors.transparent,
+                          child: InkWell(
+                            onTap: () {},
+                            child: Center(
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  //Text('G', style: huruf2.copyWith(fontSize: 18),),
+                                  // Icon(
+                                  //   Ikon.google,
+                                  //   size: 18,
+                                  //   color: tiga,
+                                  //),
+                                  Image.asset('assets/gug.png', height: 30,),
+                                  SizedBox(
+                                    width: 3,
+                                  ),
+                                  Text(
+                                    'Google',
+                                    style: huruf2.copyWith(color: satu),
+                                  ),
+                                ],
                               ),
                             ),
                           ),
@@ -222,7 +217,7 @@ class _loginState extends State<login> {
                       child: Text(
                         'Forgot Password?',
                         style: huruf2.copyWith(
-                            fontWeight: FontWeight.w500, color: Colors.black54),
+                            fontWeight: FontWeight.w500, color: Colors.black54, fontSize: 13),
                       )),
                   // SizedBox(
                   //   height: 10,

@@ -42,7 +42,7 @@ class _data1State extends State<data1> {
                     ),
                     Container(
                       height: 45,
-                      width: 290,
+                      width: 275,
                       margin: EdgeInsets.only(
                           right: 0, left: 10, top: 10, bottom: 10),
                       decoration: BoxDecoration(
@@ -73,7 +73,7 @@ class _data1State extends State<data1> {
                     ),
                     Container(
                       height: 45,
-                      width: 290,
+                      width: 274,
                       margin: EdgeInsets.only(
                           right: 0, left: 10, top: 10, bottom: 10),
                       decoration: BoxDecoration(
@@ -104,7 +104,7 @@ class _data1State extends State<data1> {
                     ),
                     Container(
                       height: 45,
-                      width: 290,
+                      width: 272,
                       margin: EdgeInsets.only(
                           right: 0, left: 10, top: 10, bottom: 10),
                       decoration: BoxDecoration(

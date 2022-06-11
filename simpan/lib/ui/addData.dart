@@ -44,10 +44,10 @@ class _dataState extends State<data> {
                     ),
                     Container(
                       height: 45,
-                      width: 290,
+                      width: 280,
                       //padding: EdgeInsets.only(left: 20, top: 6),
                       margin: EdgeInsets.only(
-                          right: 0, left: 10, top: 10, bottom: 10),
+                          right: 0, left: 5, top: 10, bottom: 10),
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           color: Colors.transparent),
@@ -85,10 +85,10 @@ class _dataState extends State<data> {
                     ),
                     Container(
                       height: 45,
-                      width: 290,
+                      width: 279,
                       //padding: EdgeInsets.only(left: 20, top: 6),
                       margin: EdgeInsets.only(
-                          right: 0, left: 0, top: 10, bottom: 10),
+                          right: 0, left: 5, top: 10, bottom: 10),
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           color: Colors.transparent),
@@ -125,10 +125,10 @@ class _dataState extends State<data> {
                     ),
                     Container(
                       height: 45,
-                      width: 290,
+                      width: 277,
                       //padding: EdgeInsets.only(left: 20, top: 6),
                       margin: EdgeInsets.only(
-                          right: 0, left: 10, top: 10, bottom: 10),
+                          right: 0, left: 5, top: 10, bottom: 10),
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           color: Colors.transparent),

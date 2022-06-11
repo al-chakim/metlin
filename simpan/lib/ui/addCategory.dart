@@ -75,7 +75,7 @@ class _AddCategoryState extends State<AddCategory> {
                       // ),
                       Container(
                       height: 45,
-                      width: 310,
+                      width: 280,
                       //padding: EdgeInsets.only(left: 20, top: 6),
                       margin: EdgeInsets.only(
                           right: 0, left: 0, top: 10, bottom: 10),

@@ -46,13 +46,13 @@ class _profileState extends State<profile> {
                           fontSize: 19
                         )
                       ),
-                    SizedBox(height: 5,),
-                    Text('065119157 - 065119167\n065119170 - 065119177'),
-                    SizedBox(height: 5,),
+                    SizedBox(height: 2,),
+                    Text('065119167'),
+                    SizedBox(height: 2,),
                     Text('Simpan@simpan.co.id')
                   ],
                 ),
-                SizedBox(width: 105,),
+                SizedBox(width: 73,),
                 Column(
                   children: [
                     IconButton(onPressed: (){}, icon: Icon(Icons.edit))
@@ -87,11 +87,11 @@ class _profileState extends State<profile> {
                     ),
                     Text('Catatan'),
                     SizedBox(
-                      width: 64,
+                      width: 200,
                     ),
-                    Text('Cek riwayat & catatan terakhir', style: TextStyle(fontSize: 13),),
+                    //Text('Cek riwayat & catatan terakhir', style: TextStyle(fontSize: 13),),
                     SizedBox(
-                      width: 15,
+                      width: 20,
                     ),
                     Icon(
                       Icons.arrow_forward_ios,
@@ -118,7 +118,7 @@ class _profileState extends State<profile> {
                     ),
                     //Text('Cek riwayat & pesanan aktif'),
                     SizedBox(
-                      width: 165,
+                      width: 133,
                     ),
                     Icon(
                       Icons.arrow_forward_ios,
@@ -145,7 +145,7 @@ class _profileState extends State<profile> {
                     ),
                     //Text('Cek riwayat & pesanan aktif'),
                     SizedBox(
-                      width: 87,
+                      width: 57,
                     ),
                     Icon(
                       Icons.arrow_forward_ios,
@@ -168,11 +168,11 @@ class _profileState extends State<profile> {
                     ),
                     Text('Atur akun'),
                     SizedBox(
-                      width: 75,
+                      width: 37,
                     ),
                     //Text('Cek riwayat & pesanan aktif'),
                     SizedBox(
-                      width: 162,
+                      width: 170,
                     ),
                     Icon(
                       Icons.arrow_forward_ios,
@@ -199,7 +199,7 @@ class _profileState extends State<profile> {
                     ),
                     //Text('Cek riwayat & pesanan aktif'),
                     SizedBox(
-                      width: 110,
+                      width: 79,
                     ),
                     Icon(
                       Icons.arrow_forward_ios,

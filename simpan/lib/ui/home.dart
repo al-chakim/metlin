@@ -68,7 +68,7 @@ class _HomePageState extends State<HomePage> {
                         width: 215,
                       ),
                       SizedBox(
-                        width: 10,
+                        width: 0,
                       ),
                       Text(
                         'Save Your Data \nHere!',

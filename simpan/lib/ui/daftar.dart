@@ -64,7 +64,7 @@ class _DaftarState extends State<Daftar> {
                   Row(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.only(left: 29),
+                        padding: const EdgeInsets.only(left: 20),
                         child: Text('Creat your account', style: huruf3,),
                       ),
                     ],
@@ -188,7 +188,7 @@ class _DaftarState extends State<Daftar> {
                   ),
                   SizedBox(height: 15,),
                   Container(
-                    height: 50,
+                    height: 45,
                     width: 330,
                     //padding: EdgeInsets.only(left: 20, top: 6),
                     margin: EdgeInsets.only(
@@ -220,8 +220,8 @@ class _DaftarState extends State<Daftar> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Container(
-                        height: 60,
-                        width: 90,
+                        height: 45,
+                        width: 75,
                         margin: EdgeInsets.only(
                           right: 10, left: 10, top: 10, bottom: 10),
                         decoration: BoxDecoration(
@@ -239,8 +239,8 @@ class _DaftarState extends State<Daftar> {
                         ),
                       ),
                       Container(
-                        height: 60,
-                        width: 90,
+                        height: 45,
+                        width: 75,
                         margin: EdgeInsets.only(
                           right: 10, left: 10, top: 10, bottom: 10),
                         decoration: BoxDecoration(
@@ -252,7 +252,7 @@ class _DaftarState extends State<Daftar> {
                           child: InkWell(
                             onTap: (){},
                             child: Center(
-                              child: Image.asset('assets/gug.png', height: 50,)
+                              child: Image.asset('assets/gug.png', height: 40,)
                             ),
                           ),
                         ),
